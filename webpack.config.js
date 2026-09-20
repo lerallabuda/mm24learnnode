@@ -1,7 +1,7 @@
 import path from "path";
 import HtmlWebpackPlugin from "html-webpack-plugin";
 
-let response = await fetch('https://rickandmortyapi.com/api/character');
+let response = await fetch('https://rickandmortyapi.com/api/character?page=9');
 let data = await response.json();
 console.log(data);
 

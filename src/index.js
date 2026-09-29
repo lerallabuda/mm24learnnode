@@ -6,26 +6,10 @@ import App from './App.vue';
 
 import { createMemoryHistory, createWebHashHistory, createWebHistory, createRouter } from 'vue-router';
 
-import Modals from './pages/Modals.vue';
-import ToDo from './pages/ToDo.vue';
-import ChuckNorris from './pages/ChuckNorris.vue';
-import RickAndMorty from './pages/RickAndMorty.vue';
 import CookieClicker from './pages/CookieClicker.vue';
-import CanvasExample from './pages/CanvasExample.vue';
-import LeafletMap from './pages/LeafletMap.vue';
-import WebApis from './pages/WebApis.vue';
-import Chat from './pages/Chat.vue';
 
 const routes = [
-  { path: '/', component: ToDo, name: 'ToDo' },
-  { path: '/modals', component: Modals, name: 'Modals' },
-  { path: '/chuck', component: ChuckNorris, name: 'Chuck Norris' },
-  { path: '/rickandmorty', component: RickAndMorty, name: 'Rick And Morty' },
   { path: '/cookieclicker', component: CookieClicker, name: 'Cookie Clicker', meta: {noContainer: true} },
-  { path: '/canvas', component: CanvasExample, name: 'Canvas', meta: {noContainer: true} },
-  { path: '/leaflet', component: LeafletMap, name: 'Leaflet', meta: {noContainer: true} },
-  { path: '/webapis', component: WebApis, name: 'WebAPIs'},
-  { path: '/chat', component: Chat, name: 'Chat'},
 ];
 
 export const router = createRouter({
